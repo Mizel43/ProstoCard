@@ -1,0 +1,1463 @@
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ GLOBAL ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+@font-face {
+  font-family: "SB Sans Display";
+  src: url(../fonts/_helveticaneuedeskinterface_regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SB Sans Text";
+  src: url(../fonts/SB\ Sans\ Text\ Semibold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SB Sans Text";
+  src: url(../fonts/SB\ Sans\ Text.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SB Sans Text ";
+  src: url("fonts/SB Sans Text Medium.eot");
+  src: local("☺"), url(../fonts/SB\ Sans\ Text\ Medium.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SB Sans Text ";
+  src: url(../fonts/SB\ Sans\ Text\ Bold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: "SB Sans Display";
+  font-size: 24px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#preloader {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+}
+
+.loader__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  color: #0057A0;
+  font-size: 36px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.h1 {
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 400;
+}
+
+.h2 {
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 400;
+}
+
+.h3 {
+  line-height: 46px;
+  font-weight: 500;
+
+}
+
+
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ HEADER ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+
+.header {
+  padding-top: 124px;
+  background-color: #EDEDED;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content {
+  margin-right: 50px;
+  align-self: flex-start;
+  padding: 50px 0;
+  z-index: 3;
+  margin-top: 70px;
+}
+
+.header__title {
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.header__text {
+  font-family: "SB Sans Text";
+
+}
+
+.header__text-box {
+  padding: 15px 25px;
+  margin-bottom: 60px;
+  border-left: 5px solid #0057A0;
+}
+
+.header__sub-title {
+  font-size: 32px;
+  line-height: 40px;
+  color: #394149;
+  margin-bottom: 60px;
+  white-space: nowrap;
+
+  font-family: "SB Sans Text";
+}
+
+.header__btn-box {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  line-height: 30px;
+  padding: 30px 60px;
+  border-radius: 1000px;
+  background-color: #0057A0;
+  white-space: nowrap;
+  margin-right: 30px;
+  transition: all .5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__btn:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  bottom: -50%;
+  background: linear-gradient(90deg, rgba(180, 180, 180, 0.1), hsla(0, 100%, 100%, .4) 100%);
+  width: 45px;
+  transform: skewX(-22deg);
+  left: -65%;
+  animation: blick 5s infinite;
+}
+
+@-webkit-keyframes blick {
+  60% {
+    left: 100%
+  }
+
+  to {
+    left: 130%
+  }
+}
+
+@keyframes blick {
+  60% {
+    left: 100%
+  }
+
+  to {
+    left: 130%
+  }
+}
+
+.header__btn:hover {
+  transform: scale(1.03);
+}
+
+.header__text {
+  font-size: 18px;
+  white-space: nowrap;
+  border-radius: 1000px;
+  white-space: nowrap;
+  line-height: 23px;
+}
+
+.header__img {
+  margin-left: -50px;
+}
+
+.header__img img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.header__br {
+  display: none;
+}
+
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ opportunities ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+
+.opportunities {
+  padding: 143px 0;
+}
+
+
+.opportunities__tittle {
+  font-family: "SB Sans Display";
+  font-size: 54px;
+  line-height: 62px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.opportunities__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.opportunities__item {
+  padding: 50px;
+  text-align: center;
+  background-color: #EDEDED;
+  border-radius: 30px;
+}
+
+.opportunities__text {
+  font-family: "SB Sans Text";
+  line-height: 30px;
+}
+
+.opportunities__item svg {
+  margin-bottom: 50px;
+}
+
+.opportunities__item svg:nth-child(1) {
+  transform: translateX(-10px);
+}
+
+
+
+
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ STEPS▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+
+.steps {
+  padding: 147px 0;
+}
+
+.steps__title {
+  font-size: 48px;
+  line-height: 62px;
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+
+.steps__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.steps__number {
+  display: inline-block;
+  font-size: 80px;
+  padding: 50px 80px;
+  font-weight: 700;
+  line-height: 98px;
+  background-color: #EDEDED;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.fix {
+  padding: 50px 86px;
+}
+
+.steps__item {
+  text-align: center;
+}
+
+.steps__text {
+  font-size: 24px;
+  font-family: 'SB Sans Text';
+  line-height: 30px;
+}
+
+
+.steps__content svg path {
+  fill: #262626;
+}
+
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ ADVANTAGES ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+.advantages {
+  padding: 80px 0;
+  background-color: #EAF3FC;
+}
+
+.advantages__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantages__title {
+  font-size: 36px;
+  margin-bottom: 60px;
+  font-weight: 400;
+}
+
+.advantages__text {
+  font-family: 'SB Sans Text';
+}
+
+.advantages__content {
+  margin-right: 30px;
+}
+
+.advantages__list:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.advantages__item svg path {
+  fill: #262626;
+}
+
+.advantages__item svg {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ FAQ ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+.faq {
+  padding: 150px 0;
+}
+
+.faq__title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq__list {
+  padding: 50px 130px;
+  background-color: #EDEDED;
+  border-radius: 30px;
+}
+
+.faq__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.faq__item {
+  transition: all .3s;
+}
+
+.faq__link-box:hover {
+  transition: all .5s;
+}
+
+.faq__link-box {
+  display: block;
+  padding: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.last-box {
+  border-bottom: none;
+}
+
+.faq__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq__square {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.faq__square::after {
+  top: 40%;
+  left: 15px;
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 20px;
+  background: url(../images/faq-arrow.svg) 0 0 / 100% no-repeat;
+  transition: all .3s;
+}
+
+
+.faq__link-box--active .faq__square::after {
+  transform: translateY(-5px) rotateX(180deg);
+}
+
+.faq__sub-title {
+  font-size: 24px;
+}
+
+.faq__text {
+  margin-top: 25px;
+  margin-right: 70px;
+  color: #394149;
+  font-family: "SB Sans Text";
+  font-style: normal;
+}
+
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ OUR WAY ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+
+.our-way__inner {
+  margin-bottom: 150px;
+}
+
+.our-way__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.our-way__item {
+  display: flex;
+  align-items: center;
+}
+
+.our-way__item-inner {
+  width: 408px;
+  height: 140px;
+  background: #EAF3FC;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding-right: 30px;
+}
+
+.our-way__item-inner_image-box {
+  margin: 30px;
+}
+
+.our-way__min-s {
+  font-size: 16px;
+  line-height: 21px;
+  color: #262626;
+  opacity: 0.5;
+  line-height: 21px;
+}
+
+.our-way__text {
+  margin-top: 12px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.text20 {
+  font-size: 20px;
+}
+
+.text18 {
+  font-size: 18px;
+}
+
+.our-way__image-box {
+  margin: 0 40px;
+}
+
+.our-way__line {
+  display: flex;
+  margin: 40px 0;
+  height: 51px;
+  align-items: center;
+}
+
+.line-item {
+  width: 100%;
+  height: 0px;
+  border: 1px solid #EDEDED;
+  margin-right: 80px;
+  opacity: 0.5;
+}
+
+.our-way__image-box_down {
+  display: flex;
+  margin: 40px 0;
+  height: 51px;
+  align-items: center;
+  transform: rotate(90deg);
+  margin-right: 179px;
+}
+
+.revers {
+  transform: rotate(180deg);
+}
+
+.image-box-hiden {
+  display: none;
+}
+
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ TALK ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+
+.talk__inner {
+  width: 100%;
+}
+
+.talk {
+  margin-bottom: 50px;
+}
+
+.talk__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.talk__item {
+  width: 460px;
+  height: 460px;
+  border-radius: 30px;
+}
+
+.talk__item-1 {
+  background: url(../images/bitcointalk.png);
+}
+
+.talk__item-2 {
+  background: url(../images/vc.png);
+}
+
+.talk__item-3 {
+  background: url(../images/awd.png);
+}
+
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ FOOTER ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer__link {
+  transform: translateX(-30px);
+  animation: up .5s linear alternate infinite 2s;
+}
+
+@keyframes up {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+.footer__site-name,
+.footer__site-year {
+  font-family: 'SB Sans Text';
+}
+
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇   MEDIA   ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+/* ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇   MEDIA   ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ */
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+@media (max-width: 1700px) {
+  body {
+    zoom: 75%;
+  }
+
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1530px) {
+  body {
+    zoom: 75%;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+/*●●●●●●●●●●●●●●●●●●●●●● 1380px ●●●●●●●●●●●●●●●●●●●●●● */
+
+@media (max-width: 1380px) {
+  .advantages__text {
+    width: 500px;
+    white-space: normal;
+  }
+}
+
+/*●●●●●●●●●●●●●●●●●●●●●● 1110px ●●●●●●●●●●●●●●●●●●●●●● */
+/* ----------HEADER------------ */
+@media (max-width: 1110px) {
+
+  .header__content {
+    margin-right: 0;
+  }
+
+  .header__sub-title {
+    white-space: normal;
+  }
+
+  /* ----------STEPS------------ */
+  .steps {
+    padding: 50px 0;
+  }
+
+
+  /* ----------opportunities------------ */
+  .opportunities {
+    padding: 50px 0;
+  }
+
+  /* ----------advantages------------ */
+  .advantages__title {
+    white-space: nowrap;
+  }
+
+  .advantages__content {
+    margin-right: 15px;
+  }
+
+  .advantages {
+    padding: 50px 0 30px;
+  }
+
+
+  /* ----------faq------------ */
+  .faq__link-box:hover {
+    box-shadow: none;
+  }
+
+
+  /* ----------our way------------ */
+  .line-item {
+    margin-right: 50px;
+  }
+
+  .our-way__image-box_down {
+    margin-right: 150px;
+  }
+
+  /* ----------talk------------ */
+
+  .talk {
+    margin-bottom: 50px;
+  }
+
+  .talk__box {
+    /* justify-content: space-around; */
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: space-evenly;
+  }
+
+  .talk__item {
+    width: 335px;
+    height: 335px;
+    border-radius: 30px;
+  }
+
+  .talk__item-1 {
+    background: url(../images/bitcointalk-small.png);
+  }
+
+  .talk__item-2 {
+    background: url(../images/vc-small.png);
+  }
+
+  .talk__item-3 {
+    background: url(../images/awd-small.png);
+  }
+
+}
+
+
+
+
+
+/*●●●●●●●●●●●●●●●●●●●●●● 960px ●●●●●●●●●●●●●●●●●●●●●● */
+/* ----------HEADER------------ */
+
+@media (max-width: 960px) {
+  .header__img {
+    margin-left: 0;
+  }
+
+  .h1 {
+    font-size: 62px;
+  }
+
+  .header__title-box img {
+    width: 150px;
+  }
+
+  .header__sub-title {
+    font-size: 24px;
+  }
+
+  .header__text {
+    font-size: 16px;
+  }
+
+  .header__btn {
+    font-size: 20px;
+    padding: 24px 52px;
+  }
+
+
+  /* ----------opportunities------------ */
+
+  .opportunities__item {
+    padding: 40px;
+    font-size: 22px;
+  }
+
+  .h2 {
+    font-size: 46px;
+  }
+
+  .opportunities {
+    padding: 50px 0;
+  }
+
+  .opportunities__box {
+    gap: 40px;
+  }
+
+  /* ----------STEPS------------ */
+  .steps__content {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .steps__number {
+    padding: 20px 50px;
+  }
+
+  .steps__arrow {
+    align-self: center;
+  }
+
+  .steps__number {
+    padding: 35px 64px;
+    font-size: 70px;
+  }
+
+  .fix {
+    padding: 35px 72px;
+  }
+
+
+  /* ----------advantages------------ */
+  .advantages__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .advantages__text {
+    font-size: 22px;
+  }
+
+  .advantages__text {
+    width: 370px;
+  }
+
+  .advantages__content {
+    margin-right: 0;
+  }
+
+  .advantages__img img {
+    width: 520px;
+  }
+
+
+  /* ----------FAQ------------ */
+
+  .faq__list {
+    padding: 23px 10px;
+  }
+
+  .faq {
+    padding: 80px 0;
+  }
+
+  .faq__text {
+    font-size: 22px;
+    margin-right: 50px;
+  }
+
+  /* ----------our way------------ */
+  .our-way__inner {
+    margin-bottom: 80px;
+  }
+
+  .our-way__item-inner {
+    padding-right: 10px;
+  }
+
+  .our-way__image-box {
+    margin: 0px 15px;
+  }
+
+  .our-way__item-inner_image-box {
+    margin: 20px;
+  }
+
+}
+
+
+/*●●●●●●●●●●●●●●●●●●●●●● 800px ●●●●●●●●●●●●●●●●●●●●●● */
+@media (max-width: 800px) {
+  /* ----------HEADER------------ */
+
+  .header__img img {
+    width: 100%;
+  }
+
+  .header__content {
+    margin-right: 0px;
+  }
+
+  .header__title-box {
+    margin-bottom: 30px;
+  }
+
+
+  .header__text-box {
+    margin-bottom: 30px;
+  }
+
+  /* ----------opportunities------------ */
+  .opportunities__box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ----------STEPS------------ */
+  /* ----------FAQ------------ */
+
+  .faq__text {
+    font-size: 20px;
+  }
+
+  /* ----------our way------------ */
+
+  .our-way__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-way__item-revers{
+    flex-direction: column-reverse;
+  }
+
+  .our-way__item-inner {
+    width: 408px;
+    height: 140px;
+    background: #EAF3FC;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding-right: 30px;
+  }
+
+  .our-way__item-inner_image-box {
+    margin: 30px;
+  }
+
+  .our-way__min-s {
+    font-size: 16px;
+    line-height: 21px;
+    color: #262626;
+    opacity: 0.5;
+    line-height: 21px;
+  }
+
+  .our-way__text {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .our-way__image-box {
+    margin: 35px;
+    transform: rotate(90deg);
+  }
+
+  .our-way__line {
+    display: none;
+  }
+
+  .image-box-hiden {
+    display: block;
+  }
+
+  .revers {
+    transform: rotate(90deg);
+  }
+
+  .image-box-hiden {
+    margin: 35px;
+    transform: rotate(90deg);
+  }
+
+  /* ----------talk------------ */
+
+  .talk {
+    margin-bottom: 0;
+  }
+
+  .talk__box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .talk__item {
+    width: 460px;
+    height: 460px;
+    border-radius: 30px;
+  }
+  
+  .talk__item-1 {
+    background: url(../images/bitcointalk.png);
+    margin-bottom: 20px;
+  }
+  
+  .talk__item-2 {
+    background: url(../images/vc.png);
+    margin-bottom: 20px;
+  }
+  
+  .talk__item-3 {
+    background: url(../images/awd.png);
+  }
+}
+
+
+/*●●●●●●●●●●●●●●●●●●●●●● 767px ●●●●●●●●●●●●●●●●●●●●●● */
+@media (max-width: 767px) {
+
+  .loader__text {
+    font-size: 26px;
+
+  }
+
+  /* ----------HEADER------------ */
+
+  .header {
+    padding: 80px 0 30px;
+  }
+
+  .header__content {
+    padding: 80px 0;
+  }
+
+  .h1 {
+    font-size: 54px;
+  }
+
+  .header__sub-title {
+    font-size: 22px;
+  }
+
+  .header__text {
+    font-size: 16px;
+  }
+
+  .header__btn {
+    font-size: 18px;
+    padding: 20px 48px;
+    margin: 0 0 30px;
+  }
+
+  .header__btn-box {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header__title {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__text-box {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px 0;
+    white-space: nowrap;
+  }
+
+  .header__inner {
+    flex-direction: column;
+  }
+
+  .header__content {
+    margin: 0 auto;
+  }
+
+  .header__img img {
+    width: 650px;
+  }
+
+  .header__content {
+    margin-bottom: 30px;
+  }
+
+
+
+  /* ----------opportunities------------ */
+
+  .opportunities__item svg:first-child {
+    transform: translateX(-10px);
+  }
+
+  .opportunities__box {
+    gap: 30px;
+  }
+
+  /* ----------STEPS------------ */
+  .steps__title {
+    width: 470px;
+    margin: 0 auto 47px;
+  }
+
+  .steps__number {
+    padding: 30px 62px;
+
+    font-size: 60px;
+  }
+
+  .fix {
+    padding: 30px 68px;
+  }
+
+  /* ----------advantages------------ */
+
+  .advantages__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages__title {
+    margin: 0 auto 40px;
+  }
+
+  .advantages__title {
+    font-size: 28px;
+  }
+
+  .advantages__text {
+    font-size: 20px;
+  }
+
+  .advantages__list:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .advantages__content {
+    margin-bottom: 40px;
+  }
+
+  .advantages__img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .advantages__img img {
+    width: 500px;
+  }
+
+  /* ----------FAQ------------ */
+  .faq__sub-title {
+    width: 375px;
+  }
+
+  .faq__square {
+    width: 54px;
+    height: 54px;
+  }
+
+  .faq__square::after {
+    left: 10px;
+    transform: scale(0.8);
+  }
+
+  .faq__link-box--active .faq__square::after {
+    transform: translateY(-5px) rotateX(180deg) scale(0.8);
+  }
+
+}
+
+
+/*●●●●●●●●●●●●●●●●●●●●●● 564px ●●●●●●●●●●●●●●●●●●●●●● */
+@media (max-width: 564px) {
+
+  /* ----------HEADER------------ */
+  .header__sub-title,
+  .header__text,
+  .header__text-box {
+    white-space: normal;
+  }
+
+  .header__img img {
+    width: 450px;
+  }
+
+  .header__sub-title {
+    text-align: center;
+  }
+
+  .header__text-box, .header__content {
+    width: 100%;
+  }
+
+
+  /* ----------opportunities------------ */
+
+  .opportunities__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .opportunities__box {
+    gap: 20px;
+  }
+
+
+
+
+  /* ----------STEPS------------ */
+  .steps__number {
+    padding: 40px 75px;
+    font-size: 50px;
+  }
+
+  .fix {
+    padding: 40px 80px;
+  }
+
+  .steps__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+
+  .steps__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .steps__content svg {
+    height: 150px;
+    align-self: auto;
+    transform: rotate(90deg);
+  }
+
+  .steps__title {
+    margin: 0 auto 20px;
+  }
+
+  /* ----------advantages------------ */
+
+  .advantages__title {
+    white-space: normal;
+    margin: 0 auto 30px;
+  }
+
+  .advantages__text {
+    width: 100%;
+  }
+
+  /* ----------FAQ------------ */
+  .faq .container {
+    padding: 0;
+  }
+
+  .faq__square {
+    width: 48px;
+    height: 48px;
+  }
+
+  .faq__square::after {
+    left: 7px;
+    transform: scale(0.6);
+  }
+
+  .faq__link-box--active .faq__square::after {
+    transform: translateY(-5px) rotateX(180deg) scale(0.6);
+  }
+
+  .faq__link-box {
+    padding: 15px;
+  }
+
+  .footer__site-year,
+  .footer__site-name {
+    font-size: 18px;
+  }
+
+  .faq__text {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+
+}
+
+
+/*●●●●●●●●●●●●●●●●●●●●●● 492px ●●●●●●●●●●●●●●●●●●●●●● */
+@media (max-width: 492px) {
+
+  /* ----------HEADER------------ */
+  .h1 {
+    font-size: 46px;
+  }
+
+  .header__sub-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .header__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__br {
+    display: block;
+  }
+
+  /* ----------opportunities------------ */
+
+
+
+  .opportunities__box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  /* ----------STEPS------------ */
+
+  .steps__title {
+    width: 100%;
+  }
+
+  /* ----------FAQ------------ */
+
+  .faq__link-box {
+    padding: 23px 10px;
+
+  }
+
+  .faq__sub-title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .faq__sub-title {
+    width: 250px;
+  }
+
+  .advantages__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .faq__text {
+    font-size: 16px;
+
+  }
+
+  /* ----------FOOTER------------ */
+  .footer__link {
+    transform: translateX(0px);
+  }
+
+}
+
+/*●●●●●●●●●●●●●●●●●●●●●● 496px ●●●●●●●●●●●●●●●●●●●●●● */
+
+@media (max-width: 496px) {
+  
+  /* ----------HEADER------------ */
+  .header__content {
+    padding: 0;
+  }
+
+  .header__title {
+    font-size: 32px;
+    line-height: 41px;
+  }
+
+  
+
+  .header__btn {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .header__img img {
+    width: 400px;
+    transform: translateX(40px);
+  }
+
+  .h1 {
+    font-size: 32px;
+    line-height: 41px;
+  }
+
+  .head__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .header__title-box img {
+    width: 90px;
+  }
+
+  .header__sub-title {
+    font-size: 16px;
+    line-height: 25px;
+    width: 300px;
+    margin: 0 auto 30px;
+  }
+
+  .header__title-box {
+    margin-bottom: 10px;
+  }
+
+  .header__circle {
+    width: 383px;
+    height: 383px;
+    top: 90px;
+    left: -101px;
+  }
+
+  
+
+  /* ----------opportunities------------ */
+
+  .opportunities__item {
+    padding: 70px 40px;
+  }
+
+
+  /* ----------STEPS------------ */
+  .steps {
+    padding: 30px 0 80px;
+  }
+
+  .h2 {
+    font-size: 32px;
+    line-height: 41px;
+  }
+
+  .steps__number {
+    padding: 40px 55px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  .fix {
+    padding: 40px 60px;
+  }
+
+
+  /* ----------advantages------------ */
+
+  .advantages__title {
+    text-align: left;
+  }
+
+  .advantages__text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .advantages__item {
+    margin-bottom: 20px;
+  }
+
+  .advantages__img img {
+    width: 440px;
+  }
+
+  /* ----------FAQ------------ */
+  .faq__text {
+    margin-right: 40px;
+    font-size: 14px;
+  }
+
+  .faq__square::after {
+    left: 7px;
+    transform: scale(0.9);
+  }
+
+  .faq__link-box--active .faq__square::after {
+    transform: translateY(-5px) rotateX(180deg) scale(0.9);
+  }
+  .faq .container {
+    padding: 0;
+  }
+  .our-way__item-inner {
+    width: 100%;
+  }
+}
